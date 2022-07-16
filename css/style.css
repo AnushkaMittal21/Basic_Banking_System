@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    transition: all .2s linear;
+    scroll-behavior: smooth;
+}
+
+/*HOME SECTION*/
+.home {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15));
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+    padding-top: 5%;
+}
+
+.home h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+.home p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Darjeeling";
+    }
+
+    20% {
+        content: "Agra";
+    }
+
+    35% {
+        content: "Jaipur";
+    }
+
+    60% {
+        content: "kerala";
+    }
+
+    80% {
+        content: "delhi";
+    }
+
+    100% {
+        content: "Mumbai";
+    }
+}
+
+/*ACTIVITY SECTION*/
+.image{
+    padding-left: 25%;
+}
+.button{
+    padding-top: 8%;
+}
+.row{
+    margin-top: 5%;
+}
+button{
+	border:none;
+	border-radius: 8px;
+	padding: 8px;
+	background:#7B8788; 
+	color:white;
+	letter-spacing: 1.5px;
+	font-size: 20px;
+	transition: 0.5s;
+}
+button:hover,h1:hover{
+	transform: scale(1.1);
+}
+button:hover{
+	background-color:#4C4B4B;
+}
+
+/*FOOTER*/
+footer{
+	color:#586776;
+	background-color:#EAF0F1;
+	letter-spacing: 0.5px;
+}
+footer p{
+	margin: 0;
+	font-size: 15px;
+}
